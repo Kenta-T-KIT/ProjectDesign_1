@@ -1,0 +1,239 @@
+@charset "ANSI";
+
+/* すべてのWebページに適用される */
+html {
+	font-family: sans-serif;
+}
+html * {
+	box-sizing: border-box;
+}
+body {
+	margin: 0 0 0 0;
+	background-color: #fffffd;
+}
+.wrapper {
+	zoom: 0.75; 
+	-moz-transform: scale(3); 
+  	-moz-transform-Origin: 0 0;
+	margin: 0 auto 0 auto;
+	max-width: 960px;
+}
+/* 書式：本文 */
+h1 {
+	letter-spacing: 0.3em;
+	color: #333333;
+	font-size: 22px;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+/* 書式：見出し */
+h2 {
+	letter-spacing: 0.3em;
+	color: #333333;
+	font-size: 36px;
+	border-bottom: 3px solid #1e90ff;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	text-align: center
+}
+/* 書式：補足 */
+h3 {
+	letter-spacing: 0.1em;
+	color: #333333;
+	font-size: 20px;
+	text-align: right;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+/* 書式：楕円部 */
+.oval {
+	position: relative;
+	display: inline-block;
+  	width: 450px;
+  	height: 250px;
+	background: rgb(246, 156, 85);
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.oval span {
+  	position: absolute;
+	display: inline-block;
+  	left: 0;
+  	top: 45%;
+  	-webkit-transform: translateY(-50%);
+  	transform: translateY(-50%);
+  	width :450px;
+  	text-align:center;
+	letter-spacing: 0.3em;
+	color: #333333;
+	font-size: 26px;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+/* 書式：画像部 */
+.SideBySide img{
+	width: 420px;
+	height: 400px;
+}
+.SideBySide h1{
+	display:inline-block;
+	vertical-align:top;
+	letter-spacing: 0.3em;
+	color: #333333;
+	font-size: 28px;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+p {
+	line-height: 1.5;
+}
+a:link {
+	color: #333333;
+}
+a:visited {
+	color: #333333;
+}
+a:hover {
+	color: #333333;
+}
+a:active {
+	color: #333333;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* すべてのページに適用 - ヘッダー - */
+.logo {
+	margin: 50px 0 40px 0;
+	line-height: 0;
+	text-align: center;
+}
+.nav li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 30px;
+}
+.nav ul {
+	margin: 0 0 0 0;
+	padding: 10px 10px 10px 250px;
+	background-image: url(../image/menu-bk.png);
+	background-repeat: repeat-x;
+}
+.nav a:link {
+	color: #3c454d;
+	text-decoration: none;
+}
+.nav a:visited {
+	color: #333333;
+	text-decoration: none;
+}
+.nav a:hover {
+	color: #d3d3d3;
+	text-decoration: none;
+}
+.nav a:active {
+	color: #5a9bc0;
+	text-decoration: none;
+}
+
+/* すべてのページに適用 - フッター - */
+.footer {
+	margin-top: 30px;
+	padding: 30px 15px 20px 15px;
+	font-size: 12px;
+	color: #3f5170;
+}
+
+/* テーブル */
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+table th {/*table内のthに対して*/
+  padding: 25px 40px;/*上下左右10pxずつ*/
+}
+
+table td {/*table内のtdに対して*/
+  padding: 26px 40px;/*上下3pxで左右10px*/
+  font-size: 20px;
+}
+
+/* スマートフォン向けCSS */
+@media screen and (max-width: 480px) {
+
+	/* 全体 - ナビゲーション */
+	.wrapper {
+		margin: 0.8px;
+	}
+	.logo {
+		margin: 30px 0;
+	}
+	.logo img {
+		width: 200px;
+	}
+	.nav {	
+		background-color: #dfddda;
+	}
+	.nav li {
+		display: block;
+	}
+
+	/* menu.html - 横並び解除 */
+	.menu-item {
+		display: block;
+	}
+	.menu-photo {
+		margin-right: 0;
+		width: 100%;
+	}
+	.menu-text {
+		width: 100%;
+	}
+
+	/* contact.html - フォーム */
+	select {
+		width: 100%;
+	}
+	input[name="subject"] {
+		width: 100%;
+	}
+	textarea {
+		width: 100%;
+	}
+	input[type="submit"] {
+		margin: 20px 0;
+		width: 100%;
+	}	
+}
